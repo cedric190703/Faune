@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="JS/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
                                 <a href="fishs.html">Fishs/Amphibians/Amphibians</a>
                                 <a href="invertebres.html">Invertebrates</a>
                                 <a href="plants.html">Plants</a>
-                                <a href="savages.html">Savage species</a>
+                                <a href="savages.html">Wild species</a>
                             </div>
                     </div>
                         </div>
@@ -37,7 +39,54 @@
             </ul>
         </nav>
     </header>
-
+    <div class="diapo">
+        <!-- Conteneur des "diapos" -->
+        <div class="elements">
+            <!-- Première diapo -->
+            <div class="element active">
+                <a href="mammifere.html"><img src="Wolf.jpg" alt="Image1"></a>
+                <div class="caption">
+                    <h1 class="Diapo" id="black">Mammiferes</h1>
+                </div>
+            </div>
+            <!-- Deuxième diapo -->
+            <div class="element">
+                <a href="birds.html"><img src="Bald-Eagle.jpg" alt="Image2"></a>
+                <div class="caption">
+                    <h1 class="Diapo">Birds</h2>
+                </div>
+            </div>
+            <!-- Troisième diapo -->
+            <div class="element">
+                <a href="invertebres.html"><img src="Diaporama/inver.jpg" alt="Image3"></a>
+                <div class="caption">
+                    <h1 class="Diapo">Invertebrates</h1>
+                </div>
+            </div>
+            <!-- Quatrième diapo -->
+            <div class="element">
+                <a href="fishs.html"><img src="Diaporama/amphi.jpg" alt="Image4"></a>
+                <div class="caption">
+                    <h1 class="Diapo">Fishs/Amphibians/Amphibians</h1>
+                </div>
+            </div>
+            <!-- Quatrième diapo -->
+            <div class="element">
+                <a href="savages.html"><img src="Diaporama/Wild.jpg" alt="Image5"></a>
+                <div class="caption">
+                    <h1 class="Diapo">Wild species</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Flèches de navigation -->
+        <i id="nav-gauche" class="las la-chevron-left"></i>
+        <i id="nav-droite" class="las la-chevron-right"></i>
+    </div>
+    <div class="style">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> Fauna and Flora</h3>
+        </div>
+      </div>
     <div class="row">
         <div id="Presentation" class="col">
             <h1>Welcome to the website of Fauna and Flora of the Country</h1>

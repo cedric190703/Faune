@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 body
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,19 +14,58 @@ header
     background: rgb(241,150,44);
     background: linear-gradient(85deg, rgba(241,150,44,0.8295693277310925) 0%, rgba(206,106,209,0.8155637254901961) 100%);
     background-position: center;
-    height: 150px;
+    height: 200px;
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
-
-
+  
 #logo{
+    margin-top: 30px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-left: 100px;
+}
+
+.style{
+    text-align: center;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #0b0988 20%,
+    #0ab163 40%,
+    #5ba506 50%,
+    #bc3918 60%,
+    #bc3918 65%,
+    #5ba506 70%,
+    #0ab163 80%,
+    #0b0988 90%,
+    #231557 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 7s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 nav
@@ -108,7 +148,7 @@ h2 {
     background: linear-gradient(240deg, rgba(96,166,60,0.8323704481792717) 0%, rgba(175,166,57,0.8379726890756303) 45%, rgba(200,196,40,0.8071603641456583) 81%, rgba(82,255,250,0.865983893557423) 100%);
     background-position: center;
     height: 1650px;
-    width: 571px;
+    width: 573px;
     font-size: medium;
     margin-left: 10px;
 }
@@ -116,7 +156,7 @@ h2 {
 .row {
     margin-top: 20px;
     margin-bottom: 15px;
-    margin-left: 196px;
+    margin-left: 185px;
     display : flex;
     flex-direction : row;
   }
@@ -269,4 +309,59 @@ footer p{
     margin-left: auto;
     margin-right: auto;
     font-size: medium;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.diapo h1{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+#nav-droite{
+    right: 400px;
+    top:50%;
+}
+
+#nav-gauche{
+    left: 400px;
+    top:50%;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+    text-align: center;
+}
+
+.element > a > img{
+    width: 1500px;
+    height: 625px;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+    padding: 30px;
 }
