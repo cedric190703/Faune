@@ -41,7 +41,7 @@ function slideNext(){
 function slidePrev(){
     cpt--
 
-    if(compteur < 0){
+    if(cpt < 0){
         cpt = slides.length - 1
     }
 
